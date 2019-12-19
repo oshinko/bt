@@ -1,0 +1,10 @@
+# Raspbian
+sudo apt-get update
+sudo apt-get install bluetooth bluez libbluetooth-dev libudev-dev -y
+sudo apt-get install nodejs npm -y
+sudo npm install n -g
+sudo n 8.11.3
+sudo ln -sf /usr/local/bin/node /usr/bin/node
+sudo apt purge nodejs -y
+sudo apt autoremove -y
+npm install noble
